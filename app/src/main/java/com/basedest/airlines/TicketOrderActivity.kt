@@ -3,19 +3,20 @@ package com.basedest.airlines
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import androidx.activity.viewModels
 import com.basedest.airlines.databinding.ActivityTicketOrderBinding
 import com.basedest.airlines.viewmodel.TicketViewModel
 import com.basedest.airlines.data.Ticket
 
 class TicketOrderActivity : ComponentActivity() {
     private lateinit var binding: ActivityTicketOrderBinding
-    private val viewModel: TicketViewModel by viewModels()
+    private lateinit var viewModel: TicketViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTicketOrderBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        viewModel = (application as AirlinesApplication).ticketViewModel
 
         setupClickListeners()
     }

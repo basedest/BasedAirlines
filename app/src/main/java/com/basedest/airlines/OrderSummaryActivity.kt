@@ -10,13 +10,16 @@ import com.basedest.airlines.viewmodel.TicketViewModel
 
 class OrderSummaryActivity : ComponentActivity() {
     private lateinit var binding: ActivityOrderSummaryBinding
-    private val viewModel: TicketViewModel by viewModels()
+    private lateinit var viewModel: TicketViewModel
     private val adapter = TicketAdapter()
+    
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityOrderSummaryBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        viewModel = (application as AirlinesApplication).ticketViewModel
 
         setupRecyclerView()
         observeViewModel()
