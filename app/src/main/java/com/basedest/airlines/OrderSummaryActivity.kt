@@ -2,7 +2,6 @@ package com.basedest.airlines
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.basedest.airlines.adapter.TicketAdapter
 import com.basedest.airlines.databinding.ActivityOrderSummaryBinding
