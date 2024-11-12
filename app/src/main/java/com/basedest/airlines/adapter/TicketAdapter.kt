@@ -4,15 +4,15 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.basedest.airlines.data.Ticket
-import com.basedest.airlines.databinding.ItemTicketBinding
+import com.basedest.airlines.databinding.ListItemTicketBinding 
 
 class TicketAdapter : RecyclerView.Adapter<TicketAdapter.TicketViewHolder>() {
     private var tickets = listOf<Ticket>()
 
-    class TicketViewHolder(val binding: ItemTicketBinding) : RecyclerView.ViewHolder(binding.root)
+    class TicketViewHolder(val binding: ListItemTicketBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TicketViewHolder {
-        val binding = ItemTicketBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ListItemTicketBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return TicketViewHolder(binding)
     }
 
