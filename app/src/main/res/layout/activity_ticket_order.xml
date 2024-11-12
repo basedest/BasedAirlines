@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/passengerNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Passenger Name" />
+
+    <EditText
+        android:id="@+id/departureCityInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Departure City" />
+
+    <EditText
+        android:id="@+id/arrivalCityInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Arrival City" />
+
+    <EditText
+        android:id="@+id/priceInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/dateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date" />
+
+    <CheckBox
+        android:id="@+id/isChildCheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Child Ticket" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Ticket" />
+
+    <Button
+        android:id="@+id/viewOrdersButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Orders" />
+</LinearLayout>
